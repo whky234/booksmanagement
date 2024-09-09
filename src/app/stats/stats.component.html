@@ -1,0 +1,29 @@
+<div class="container">
+<table>
+  <thead>
+    <td>Status</td>
+    <td>Count</td>
+    <td>Percentage</td>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Completed</td>
+      <td>{{completed}}</td>
+      <td>{{(completed/total *100).toFixed(2)}}</td>
+    </tr>
+
+    <tr>
+      <td>Not Started</td>
+      <td>{{notstart}}</td>
+      <td>{{(notstart/total *100).toFixed(2)}}</td>
+    </tr>
+
+    <tr>
+      <td>In Progress</td>
+      <td>{{inprogress}}</td>
+      <td>{{(inprogress/total *100).toFixed(2)}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,28 @@
+<div class="login-container">
+  <h2>{{islogging?'Login here':'Singup here'}}</h2>
+  <div class="spinner-wrapper" *ngIf="isloading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <form #authform="ngForm" (ngSubmit)="onsubmitted(authform)"  *ngIf="!isloading">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput ngModel type="email" name="email" email required>
+      <mat-error >
+      </mat-error>
+      <mat-error >
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput ngModel type="password" minlength="8" name="password" password required>
+      <mat-error >
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" >{{islogging?'Login':'Singup'}}</button>
+    <p style="color: blue; text-align: center;">{{islogging?'do not have an account':''}}</p>
+    <button mat-raised-button  type="button" (click)="switch()">{{islogging?'Register Here':'Login Here'}}</button>
+  </form>
+</div>

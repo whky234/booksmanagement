@@ -1,0 +1,16 @@
+.navbar-nav .nav-item .dropdown-menu {
+  margin-top: 0.5rem; /* Adjusts the dropdown position */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Make the brand name bold */
+}
+
+.home-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

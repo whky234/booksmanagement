@@ -1,0 +1,181 @@
+/* Ensure the form is spaced and laid out nicely */
+.form-container {
+  padding: 20px;
+}
+
+/* Add some margin to each form group for better spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Customize the modal header */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Customize the modal title */
+.modal-title {
+  font-size: 1.25rem;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Style the close button */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Style the input fields */
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+/* Ensure the input fields have consistent width */
+.mat-form-field, .form-control {
+  width: 100%;
+}
+
+/* Add some spacing at the bottom of the modal */
+.modal-content {
+  margin-bottom: 10px;
+}
+
+/* Set modal width and center it */
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+/* Set padding for the modal body */
+.modal-body {
+  padding: 15px 20px;
+}
+
+/* Align buttons to the right in the modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+/* Customize the mat-select field */
+.mat-form-field {
+  margin-top: 10px;
+}
+
+/* Ensure the form is spaced and laid out nicely */
+.form-container {
+  padding: 20px;
+}
+
+/* Add some margin to each form group for better spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Customize the modal header */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Customize the modal title */
+.modal-title {
+  font-size: 1.25rem;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Style the close button */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Style the input fields */
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+/* Ensure the input fields have consistent width */
+.mat-form-field, .form-control {
+  width: 100%;
+}
+
+/* Add some spacing at the bottom of the modal */
+.modal-content {
+  margin-bottom: 10px;
+}
+
+/* Set modal width and center it */
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+/* Set padding for the modal body */
+.modal-body {
+  padding: 15px 20px;
+}
+
+/* Align buttons to the right in the modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+/* Customize the mat-select field */
+.mat-form-field {
+  margin-top: 10px;
+}
+/* Ensure the select dropdown appears on top of the modal */
+.mat-select-panel {
+  z-index: -1051;
+  background-color: #0056b3; /* This value should be higher than the z-index of the modal */
+}
+

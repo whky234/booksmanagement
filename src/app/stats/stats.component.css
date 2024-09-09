@@ -1,0 +1,49 @@
+/* Center the table on the page */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+}
+table {
+
+  margin: 0 auto; /* Center horizontally */
+  border-collapse: collapse; /* Remove the default space between table cells */
+  width: 60%; /* Set the table width */
+  text-align: center; /* Center-align text in table cells */
+  font-family: Arial, sans-serif;
+}
+
+/* Add borders to table and cells */
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Add background color to table header */
+thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Add some space at the bottom of the table */
+tbody tr:last-child {
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* Adjust font size for better readability */
+td {
+  font-size: 16px;
+}
+
+/* Add some padding to the table cells */
+td {
+  padding: 12px;
+}
+
+/* Style the percentage values */
+td:nth-child(3) {
+  font-weight: bold;
+  color: #4CAF50; /* Green color for percentage */
+}

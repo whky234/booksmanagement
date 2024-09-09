@@ -1,0 +1,30 @@
+<app-task (emittaskdata)="create($event)" [task]="currentTask"></app-task>
+
+<div class="card-container">
+  <!-- Spinner Wrapper -->
+  <div class="spinner-wrapper" *ngIf="isloading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <ng-container *ngIf="!isloading">
+    <div *ngIf="data.length >= 1; else noTaskTemplate" class="grid-container">
+      <div class="card" *ngFor="let item of data">
+        <div class="card-body">
+          <h5 class="card-title">TITLE: {{ item.title }}</h5>
+          <p class="card-text"><strong>AUTHOR:</strong>  {{ item.author }}</p>
+          <p><strong>DESCTRIPTION: </strong> {{ item.description }}</p>
+          <p> <strong> PROGRESS: </strong>{{item.progress}}</p>
+
+          <div class="btns">
+            <button class="btn btn-primary" (click)="currentTask = item" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+            <button class="btn btn-secondary" (click)="deleteTask(item.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noTaskTemplate>
+    <p>No task created.</p>
+  </ng-template>
+</div>
