@@ -7,7 +7,7 @@ import { guardGuard } from './auth/guard.guard';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatsComponent } from './stats/stats.component';
-import { OverviewComponent } from './overview/overview.component';
+import { OverviewComponent } from './dashboard/overview/overview.component';
 
 const routes: Routes = [
   {

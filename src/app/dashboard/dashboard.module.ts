@@ -11,12 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { ListComponent } from './list/list.component';
 import { TaskComponent } from './task/task.component';
-import { OverviewComponent } from './overview/overview.component';
 import { MatSelectHarness } from '@angular/material/select/testing';
 import { MatSelectModule } from '@angular/material/select';
 import { RouterOutlet } from '@angular/router';
 import { StatsComponent } from '../stats/stats.component';
 import { guardGuard } from '../auth/guard.guard';
+import { OverviewComponent } from './overview/overview.component';
 
 
 @NgModule({
@@ -24,8 +24,9 @@ import { guardGuard } from '../auth/guard.guard';
     DashboardComponent,
     ListComponent,
     TaskComponent,
-    OverviewComponent,
-    StatsComponent
+    StatsComponent,
+    OverviewComponent
+
   ],
   exports:[
     DashboardComponent,
